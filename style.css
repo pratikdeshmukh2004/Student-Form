@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fefecc;
+}
+.container {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  text-align: center;
+  margin: 10px;
+  font-weight: 900;
+}
+
+.from-box {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+input {
+  width: 400px;
+  border: solid 1px #eee;
+  padding: 15px 15px;
+  border-radius: 10px;
+  font-size: 17px;
+  justify-content: center;
+  margin: 6px;
+  color: black;
+  height: 40px;
+}
+input:hover {
+  background-color: #ffe6bc;
+}
+select {
+  width: 400px;
+  border: solid 1px #eee;
+  padding: 15px 15px;
+  border-radius: 10px;
+  font-size: 17px;
+  justify-content: center;
+  margin: 0px;
+  background-color: #fff;
+  height: 48px;
+}
+select:hover {
+  background-color: #ffe6bc;
+}
+
+.submit_button {
+  width: 400px;
+  padding: 8px;
+  background-color: dodgerblue;
+  color: #fff;
+  border: solid 1px dodgerblue;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.submit_button:hover {
+  background-color: dodgerblue;
+  color: #fff;
+  cursor: pointer;
+}
+h2 {
+  text-align: center;
+  margin: 15px;
+  font-weight: 900;
+}
+
+#info {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#info td, #info th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#info tr:nth-child(even){background-color: #f2f2f2;}
+
+#info tr:hover {background-color: #ddd;}
+
+#info th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+.action_button:hover {
+  background-color: dodgerblue;
+  color: #fff;
+  cursor: pointer;
+}
+.leftbox{
+  margin-left: 100px;
+}
+#output{
+  max-height: 333px;
+  overflow: scroll;
+}
+#output::-webkit-scrollbar {
+  display: none;
+}
+table th {
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 0;
+  z-index: 1; 
+  background: #fff; 
+}

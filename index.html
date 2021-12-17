@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+        <h1>Students Detail Form</h1>
+
+        <div class="form-box">
+          <input
+            type="rollno"
+            id="rollno"
+            name="rollno"
+            placeholder="Roll no"
+          /><br /><br />
+          <input
+            type="student name"
+            id="name"
+            name="name"
+            placeholder="Student name"
+          /><br /><br />
+          <input
+            type="subject"
+            id="subject"
+            name="subject"
+            placeholder="Subject"
+          /><br /><br />
+          <div>
+            <select name="storage" id="storage">
+              <option value="Local">Local Storage</option>
+              <option value="Session">Session Storage</option>
+              <option value="Cookies">Cookies Storage</option>
+            </select>
+          </div>
+          <br /><br />
+          <button class="submit_button" id="submit_btn" type="button" onclick="Submit()">
+            Submit
+          </button>
+          <br>
+          <button style="display: none;" class="submit_button" id="update_btn" type="button" onclick="updateHandler()">
+            Update
+          </button>
+        </div>
+      <h2>Students Information</h2>
+      <div id="output">
+        <!-- Display Student Data -->
+      </div>
+    </div>
+    <!-- <script type="text/javascript">
+      const Submit = (e) => {
+        let studentData = {
+          rollno: document.getElementById("rollno").value,
+          name: document.getElementById("name").value,
+          subject: document.getElementById("subject").value,
+          storage: document.getElementById("storage").value,
+        };
+        localStorage.setItem("studentData", JSON.stringify(studentData));
+        // console.log(localStorage.getItem('studentData'));
+        dispData();
+        e.preventDefault();
+      };
+
+      function dispData() {
+        // console.log(JSON.parse(localStorage.getItem("stuentData")));
+        if (localStorage.getItem("studentData")) {
+          let { rollno, name, subject, storage } = JSON.parse(
+            localStorage.getItem("studentData")
+          );
+          var output = document.getElementById("output");
+          output.innerHTML = `
+            <table>
+              <tbody>
+                <tr>
+                  <td>Roll no</td>
+                  <td>${rollno}</td>
+                </tr>
+                <tr>
+                  <td>Name</td>
+                  <td>${name}</td>
+                </tr>
+                <tr>
+                  <td>Subject</td>
+                  <td>${subject}</td>
+                </tr>
+                <tr>
+                  <td>Storage Type</td>
+                  <td>${storage}</td>
+                </tr>
+            </tbody>
+          </table>
+        `;
+        }
+      }
+      dispData();
+    </script> -->
+  </body>
+</html>
